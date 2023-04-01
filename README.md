@@ -19,16 +19,35 @@ An eclipsing binary consists of two close stars moving in an orbit so placed in 
 **KOI-3570** (aliases: **2MASS J19405783+4009273**, **KIC 5023948**, and **WISE J194057.82+400927.3**) is an eclipsing binary star system. It is a member of the old open cluster NGC 6819. By analyzing the eclipse properties of this system, we can measure the mass and radius of each star. These measurements can be used to precisely determine the age of the stars.
 
 ## Getting the data: FITS file
-If you're familiar getting FITS files, then download the data from [Nasa Exoplanet Archive][1]. I downloaded the following batch file ```download_exoarch_27821.bat``` from the archive.
+If you're familiar getting FITS files, then download the data from [Nasa Exoplanet Archive][1]. I downloaded the following batch file `download_exoarch_27821.bat` from the archive.
 
 ```bash
-wget -v -O 'kplr005023948-2012060035710_slc_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/756/03/kplr005023948-2012060035710_slc_lc.tbl'
+#!/bin/sh
+
+# If wget is not installed on your system,
+# please refer to http://irsa.ipac.caltech.edu/docs/batch_download_help.html.
+#
+# Windows users: the name of wget may have version number (ie: wget-1.10.2.exe)
+# Please rename it to wget in order to successfully run this script
+# Also the location of wget executable may need to be added to the PATH environment.
+#
+wget -O 'kplr005023948-2010355172524_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/281/81/kplr005023948-2010355172524_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2011073133259_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/415/00/kplr005023948-2011073133259_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2011177032512_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/314/41/kplr005023948-2011177032512_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2012004120508_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/482/00/kplr005023948-2012004120508_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2012088054726_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/514/78/kplr005023948-2012088054726_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2012179063303_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/548/10/kplr005023948-2012179063303_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2013011073258_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/614/95/kplr005023948-2013011073258_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2013098041711_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/647/84/kplr005023948-2013098041711_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2013131215648_llc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/681/29/kplr005023948-2013131215648_llc.fits' -a search_345998328.log
+wget -O 'kplr005023948-2012060035710_slc.fits' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//Kepler/005/753/70/kplr005023948-2012060035710_slc.fits' -a search_345998328.log
+
 ```
 
-If you don't have the `wget` command installed in your system, then I recommend installing [Homebrew][2] and using the following command:
+Change the script file's permissions to make it executable (for example, chmod 755 irsspect.bat):
 
 ```bash
-brew install wget
+chmod 755 download_exoarch_27821.bat
 ```
 
 ## Lightcurve
