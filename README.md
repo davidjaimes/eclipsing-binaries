@@ -19,7 +19,7 @@ An eclipsing binary consists of two close stars moving in an orbit so placed in 
 **KOI-3570** (aliases: **2MASS J19405783+4009273**, **KIC 5023948**, and **WISE J194057.82+400927.3**) is an eclipsing binary star system. It is a member of the old open cluster NGC 6819. By analyzing the eclipse properties of this system, we can measure the mass and radius of each star. These measurements can be used to precisely determine the age of the stars.
 
 ## Getting the data: FITS file
-If you're familiar getting FITS files, then download the data from [Nasa Exoplanet Archive][1]. I downloaded the following batch file ```download_exoarch_27821.bat``` from the archive.
+If you're familiar getting FITS files, then download the data from [Nasa Exoplanet Archive][1]. I downloaded the following batch file ```fits-batch.sh``` from the archive.
 
 ```bash
 #!/bin/sh
@@ -44,10 +44,10 @@ wget -O 'kplr005023948-2012060035710_slc.fits' 'http://exoplanetarchive.ipac.cal
 
 ```
 
-If you don't have the `wget` command installed in your system, then I recommend installing [Homebrew][2] and using the following command:
+Change the script file's permissions to make it executable (for example, chmod 755 irsspect.bat):
 
 ```bash
-brew install wget
+chmod 755 fits-batch.sh
 ```
 
 ## Lightcurve
