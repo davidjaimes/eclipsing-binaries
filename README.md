@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/post-layout.astro
-date: "Dec 31, 2022"
+date: "Apr 01, 2023"
 title: "KOI-3570: An Eclipsing Binary Star System"
 path: /eclipsing-binaries
 badges:
