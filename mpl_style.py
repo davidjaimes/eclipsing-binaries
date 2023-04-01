@@ -1,3 +1,33 @@
+def pro_plot(title, subtitle, caption, title_offset=0.0, caption_offset=0.0, fig=None, ax=None, plt=None):
+    ax.yaxis.tick_right()
+    ax.plot([0.12, .9], [1.07+title_offset, 1.07+title_offset],
+        transform=fig.transFigure,
+        clip_on=False, 
+        color='w', 
+        linewidth=.6)
+    ax.add_patch(plt.Rectangle((0.12, 1.07+title_offset), 0.04, -0.02,
+        transform=fig.transFigure, 
+        clip_on=False))
+    ax.text(x=0.12, y=.98+title_offset,
+        s=rf"{title}",
+        transform=fig.transFigure,
+        ha='left',
+        fontsize=14,
+        color='w')
+    ax.text(x=0.12, y=.92+title_offset,
+        s=rf"{subtitle}",
+        transform=fig.transFigure,
+        ha='left',
+        fontsize=12,
+        color='C7')
+    ax.text(x=0.12, y=-0.10+caption_offset,
+        s=rf"{caption}Graphic by David Jaimes (www.davidjaimes.com)",
+        transform=fig.transFigure,
+        ha='left',
+        va='bottom',
+        fontsize=9,
+        color='C7')
+
 pro = {
     # Patches
     'patch.linewidth': 0.0,
