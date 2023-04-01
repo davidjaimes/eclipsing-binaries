@@ -8,12 +8,12 @@ badges:
     - Astropy
 image: koi-3570-pflc.png
 alt: koi-3570
-excerpt: Time series analysis in search for eclipsing binary stars can be daunting. Sometimes, it takes hours--even days or months--to find a single eclipsing binary in a dataset.
+excerpt: An eclipsing binary consists of two close stars moving in an orbit so placed in space in relation to Earth that the light of one can at times be hidden behind the other.
 ---
 
 <br>
 
-Time series analysis in search for eclipsing binary stars can be daunting. Sometimes, it takes hours--even days or months--to find a single eclipsing binary in a dataset. However, when you find one, it is exciting. The following is an example light curve for target Kepler Object of Interest (KOI) 3570.
+An eclipsing binary consists of two close stars moving in an orbit so placed in space in relation to Earth that the light of one can at times be hidden behind the other. Time series analysis in search for eclipsing binary stars can be daunting. Sometimes, it takes hours--even days or months--to find a single eclipsing binary in a dataset. However, when you find one, it is exciting. The following is an example light curve for target Kepler Object of Interest (KOI) 3570.
 
 ## KOI-3570
 **KOI-3570** (aliases: **2MASS J19405783+4009273**, **KIC 5023948**, and **WISE J194057.82+400927.3**) is an eclipsing binary star system. It is a member of the old open cluster NGC 6819. By analyzing the eclipse properties of this system, we can measure the mass and radius of each star. These measurements can be used to precisely determine the age of the stars.
